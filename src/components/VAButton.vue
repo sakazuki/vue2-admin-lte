@@ -1,6 +1,7 @@
 <template>
   <button type="button" class="btn"
     :class="[isBlock?'btn-block':'', btnTheme, disabled, flat, size, getAlign]"
+    v-on:click="$emit('click')"
   >
     {{name}}
     <slot></slot>
